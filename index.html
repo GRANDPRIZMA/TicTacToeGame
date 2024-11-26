@@ -16,5 +16,28 @@
         <button id="reset">Reset Game</button>
     </div>
     <script src="script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAXcKpeNyJbGQVVKTiDoWtJsJQpWVbHobI",
+          authDomain: "tictactoegame-b35c5.firebaseapp.com",
+          projectId: "tictactoegame-b35c5",
+          storageBucket: "tictactoegame-b35c5.firebasestorage.app",
+          messagingSenderId: "986323387393",
+          appId: "1:986323387393:web:4edac0b671c2f90065ec00",
+          measurementId: "G-25PMCRFJW3"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 </html>
